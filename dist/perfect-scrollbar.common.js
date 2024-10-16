@@ -890,9 +890,9 @@ function wheel(i) {
     shouldPrevent = shouldPrevent || shouldPreventDefault(deltaX, deltaY);
     if (shouldPrevent && !e.ctrlKey) {
       e.stopPropagation();
-      if (!e.passive) {
-        e.preventDefault();
-      }
+      // if (!e.passive) {
+      //   e.preventDefault();
+      // }
     }
   }
 
