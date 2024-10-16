@@ -562,7 +562,7 @@ function bindMouseScrollHandler(
     updateGeometry(i);
 
     e.stopPropagation();
-    if (e.type.startsWith('touch') && e.changedTouches.length > 1) {
+    if (!e.passive && e.type.startsWith('touch') && e.changedTouches.length > 1) {
       e.preventDefault();
     }
   }
